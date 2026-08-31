@@ -35,11 +35,11 @@ const App = () => {
         onInput={(e) => setTemperature(Number(e.currentTarget.value))}
       />
       <p>
-        {temperature()}° {scale()} ={" "}
+        {temperature()}°{scale()} ={" "}
         {scale() === "Celsius"
           ? (temperature() * 9) / 5 + 32
           : ((temperature() - 32) * 5) / 9}
-        ° {scale() === "Celsius" ? "Fahrenheit" : "Celsius"}
+        °{scale() === "Celsius" ? "Fahrenheit" : "Celsius"}
       </p>
     </div>
   );
